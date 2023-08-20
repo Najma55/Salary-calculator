@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script src="jquery.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery.js"></script>
     <script src="script.js"></script>
     <title>Employee Salary Calulator</title>
 </head>
@@ -28,8 +27,7 @@
         <input id="idInput" placeholder="ID" type="text">
         <input id="titleInput" placeholder="Title" type="text">
         <input id="salaryInput" placeholder="Annual Salary" type="text">
-        <button class="submit-button" id="submitButton">Submit</button>
-
+        <button id="submit-button">Submit</button>
     </form>
 </section> 
 
@@ -56,21 +54,13 @@
                 <th></th>
                 <td><button class="delete-button">Delete</button></td>
             </tr>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <td><button class="delete-button">Delete</button></td>
-            </tr>
-        </tbody>
-            
-    
-
-        
+        </tbody>    
     
     </table>
+    </section>
+    <section>
+        <h3> Total Monthly Cost</h3>
+        <p> Total: $<span id="totalMonthlyCost">0.00</span></p>
     </section>
 
     
