@@ -3,6 +3,7 @@ $(document).ready(onReady);
 
 function onReady() {
     $('#submit-button').on('click', addEmployee);
+    $('#employeeTableBody').on('click', '.delete-button' , deleteEmployee);
 
     console.log('Hey jQuery!');
 
@@ -22,6 +23,8 @@ function addEmployee(event) {
 
         
         let newRow=`<tr><td>${firstName}</td> <td>${lastName}</td><td>${id}</td><td>${title}</td><td>${salary}</td><td><button class="delete-button">Delete</button></td></tr>`;
+
+        
         
 
 
