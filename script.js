@@ -27,5 +27,4 @@ function addEmployee(event) {
 
         $('#employeeTableBody').append(newRow);
     
-
 }
