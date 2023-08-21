@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script src="jquery.js"></script>
-    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Employee Salary Calulator</title>
 </head>
-
-
 <body>
     <header>
         <h1>Employee Salary Calulator</h1>
@@ -18,17 +16,14 @@
 <main>
     <section>
         <h3>Add Employee</h3>
-    </section>
-
- <section>
-    <form>
-        <input id="firstNameInput" placeholder="First Name" type="text">
-        <input id="lastNameInput" placeholder="Last Name" type="text">
-        <input id="idInput" placeholder="ID" type="text">
-        <input id="titleInput" placeholder="Title" type="text">
-        <input id="salaryInput" placeholder="Annual Salary" type="text">
-        <button id="submit-button">Submit</button>
-    </form>
+        <form>
+         <input id="firstNameInput" placeholder="First Name" type="text">
+         <input id="lastNameInput" placeholder="Last Name" type="text">
+         <input id="idInput" placeholder="ID" type="text">
+         <input id="titleInput" placeholder="Title" type="text">
+         <input id="salaryInput" placeholder="Annual Salary" type="text">
+         <button id="submit-button" class="submit-button">Submit</button>
+        </form>
 </section> 
 
     <section clas="table-section">
@@ -46,22 +41,24 @@
         </thead>
         
         <tbody id="employeeTableBody">
-            <tr>
+            <tr id="emptyRow" hidden>
                 <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
+                
                 <td><button class="delete-button">Delete</button></td>
             </tr>
         </tbody>    
     
     </table>
     </section>
-    <section>
-        <h3> Total Monthly Cost</h3>
-        <p> Total: $<span id="totalMonthlyCost">0.00</span></p>
+    <section id="totalMonthlySection">
+        <h3> Total Monthly</h3>
+        <p> Total: $<span id="totalMonthlyCostValue">0.00</span></p>
     </section>
+    
 
     
     
